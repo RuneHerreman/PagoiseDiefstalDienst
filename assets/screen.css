@@ -8,6 +8,15 @@
     }
 }
 
+@keyframes teamCards {
+    0%, 100% {
+        transform: rotate(-0.5deg);
+    }
+    50% {
+        transform: rotate(0.5deg);
+    }
+}
+
 /* --------------------Global-------------------- */
 body{
     font-family: "Cooper Black", "Comic Sans MS", "Times New Roman", serif;
@@ -78,6 +87,7 @@ main ul li{
     letter-spacing: 0.15rem;
     background: blue;
     padding-top: 2rem;
+    padding-bottom: 1rem;
     width: 100%;
     box-shadow: black 0.01rem 0 1rem;
 }
@@ -99,6 +109,20 @@ main ul a{
     font-size: 1.8rem;
     padding-left: 1rem;
     width: 100%;
+}
+main ul li:nth-child(1) a{
+    font-size: 4.2rem;
+}
+main ul li:nth-child(2) a{
+    text-decoration: underline dotted deeppink;
+}
+main ul li:nth-child(3) a{
+    font-style: italic;
+    transform-origin: left;
+    font-size: 3rem;
+}
+main ul li:nth-child(4) a{
+    letter-spacing: 0.789rem;
 }
 
 /* --------------------Diefstal op maat-------------------- */
@@ -143,7 +167,6 @@ main ul a{
     letter-spacing: .2rem;
     margin-bottom: 3rem;
     padding: 1rem 5rem 2rem 5rem;
-    animation: glow 1s ease-in-out infinite alternate;
 }
 #testimonials section{
     display: flex;
@@ -168,9 +191,11 @@ main ul a{
 }
 #testimonials article h4{
     font-size: 0.75rem;
+    text-align: right;
+
 }
 #testimonials article p{
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.2rem;
 }
 
 /* --------------------Our Team-------------------- */
@@ -195,6 +220,11 @@ main ul a{
     border-radius: 1rem;
     margin: 1rem;
     box-shadow: rgba(0, 0, 0, 0.37) 0.01rem 0 1rem;
+    animation: teamCards 5s ease-in-out infinite alternate;
+}
+.teamCard:hover{
+    transition: 0.3s;
+    scale: 0.95;
 }
 .teamCard img{
     border-radius: 0.25rem;
@@ -212,4 +242,10 @@ main ul a{
 }
 .teamCard p{
     font-size: 0.9rem;
+}
+
+/* --------------------Sidebar-------------------- */
+#sidebar{
+    background: rgba(240, 128, 128, 0.34);
+    padding: 1rem;
 }
