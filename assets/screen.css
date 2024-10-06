@@ -328,15 +328,21 @@ footer{
     display: flex;
     justify-content: space-between;
 
-    padding: 1rem;
+    padding: 1.5rem;
 
     background: #41ff44;
 }
-footer h2{
+#PGDD{
+    -webkit-text-stroke: 0.45rem #948888;
+    letter-spacing: 0.2rem;
+    padding-top: 2rem;
     font-size: 8rem;
+    color: #227423;
+    transform: scaleY(1.8);
 }
 footer section h2{
     font-size: 3.5rem;
+    transform: scaleY(1);
     color: #202020;
 }
 footer ul li{
@@ -347,6 +353,13 @@ footer ul li{
 footer ul li a{
     color: #003f01;
     line-height: 1.5;
-    text-underline-offset: 0.25rem;
+    text-underline-offset: 0.4rem;
     text-decoration: underline 0.185rem;
+}
+#socialMediaIconContainer{
+    align-content: flex-end;
+}
+.socialMediaIcon{
+    width: 2.5rem;
+    height: 2.5rem;
 }
